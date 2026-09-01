@@ -1,0 +1,1108 @@
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>زفاف بيسان & حمزة</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Cairo",sans-serif;
+    background:#fff8fa;
+    color:#59434b;
+}
+
+/* =========================
+   الصفحة الأولى
+========================= */
+
+.hero{
+    height:100vh;
+    min-height:680px;
+
+    position:relative;
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+        rgba(75,35,50,.28),
+        rgba(75,35,50,.48)
+    ),
+    url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2200&q=90");
+
+    background-size:cover;
+    background-position:center;
+}
+
+/* طبقة وردية */
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+    radial-gradient(
+        circle at center,
+        rgba(255,220,230,.12),
+        rgba(85,35,55,.35)
+    );
+
+    pointer-events:none;
+}
+
+/* =========================
+   قلوب متحركة
+========================= */
+
+.hearts span{
+    position:absolute;
+
+    color:#ffd6e2;
+
+    font-size:20px;
+
+    animation:float 9s linear infinite;
+
+    opacity:.7;
+}
+
+.hearts span:nth-child(1){
+    left:10%;
+    bottom:-50px;
+    animation-delay:1s;
+}
+
+.hearts span:nth-child(2){
+    left:25%;
+    bottom:-50px;
+    animation-delay:3s;
+}
+
+.hearts span:nth-child(3){
+    left:45%;
+    bottom:-50px;
+    animation-delay:5s;
+}
+
+.hearts span:nth-child(4){
+    left:65%;
+    bottom:-50px;
+    animation-delay:2s;
+}
+
+.hearts span:nth-child(5){
+    left:85%;
+    bottom:-50px;
+    animation-delay:4s;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+    }
+
+    20%{
+        opacity:.8;
+    }
+
+    100%{
+        transform:translateY(-100vh) rotate(25deg);
+        opacity:0;
+    }
+}
+
+
+/* =========================
+   محتوى البداية
+========================= */
+
+.hero-content{
+    position:relative;
+    z-index:5;
+
+    color:white;
+
+    padding:25px;
+
+    animation:show 2s ease;
+}
+
+.bismillah{
+    font-family:"Amiri",serif;
+
+    font-size:25px;
+
+    margin-bottom:25px;
+
+    color:#ffeaf0;
+}
+
+.invite{
+    font-size:16px;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+
+    color:#fff4f7;
+}
+
+.hero h1{
+
+    font-family:"Amiri",serif;
+
+    font-size:clamp(65px,12vw,135px);
+
+    font-weight:400;
+
+    line-height:1;
+
+    text-shadow:
+    0 5px 30px rgba(0,0,0,.35);
+
+    animation:names 2.2s ease;
+}
+
+.and{
+
+    font-size:55px;
+
+    margin:0 15px;
+
+    color:#ffd0dc;
+}
+
+.subtitle{
+
+    margin-top:30px;
+
+    font-family:"Amiri",serif;
+
+    font-size:25px;
+
+    color:#fff1f5;
+}
+
+@keyframes names{
+
+    from{
+        opacity:0;
+        transform:translateY(50px) scale(.8);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}
+
+@keyframes show{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+
+/* =========================
+   زر النزول
+========================= */
+
+.scroll{
+
+    position:absolute;
+
+    bottom:30px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:white;
+
+    z-index:10;
+
+    font-size:14px;
+
+    animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+
+    0%,100%{
+        transform:translate(-50%,0);
+    }
+
+    50%{
+        transform:translate(-50%,-12px);
+    }
+}
+
+
+/* =========================
+   الأقسام
+========================= */
+
+section{
+
+    padding:110px 20px;
+
+    text-align:center;
+}
+
+.title{
+
+    font-family:"Amiri",serif;
+
+    font-size:55px;
+
+    font-weight:400;
+
+    color:#713f50;
+}
+
+.line{
+
+    width:75px;
+
+    height:2px;
+
+    background:#d99aaa;
+
+    margin:18px auto 45px;
+}
+
+
+/* =========================
+   المقدمة
+========================= */
+
+.intro{
+
+    max-width:850px;
+
+    margin:auto;
+}
+
+.intro p{
+
+    font-family:"Amiri",serif;
+
+    font-size:27px;
+
+    line-height:2;
+
+    color:#765b64;
+
+    margin-bottom:15px;
+}
+
+
+/* =========================
+   التاريخ
+========================= */
+
+.date-section{
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff0f4,
+        #fce3ea
+    );
+}
+
+.date-card{
+
+    max-width:750px;
+
+    margin:auto;
+
+    padding:60px 25px;
+
+    background:rgba(255,255,255,.75);
+
+    border:1px solid #f1cbd5;
+
+    border-radius:30px;
+
+    box-shadow:
+    0 20px 60px rgba(130,70,90,.10);
+}
+
+.day{
+
+    color:#b66c80;
+
+    font-size:22px;
+}
+
+.date{
+
+    font-family:"Amiri",serif;
+
+    font-size:60px;
+
+    color:#683b4b;
+
+    margin:10px 0;
+}
+
+.time{
+
+    color:#8b6b74;
+
+    font-size:19px;
+}
+
+
+/* =========================
+   المكان
+========================= */
+
+.venue{
+
+    background:#fffafa;
+}
+
+.venue-card{
+
+    max-width:850px;
+
+    margin:auto;
+
+    padding:65px 25px;
+
+    background:white;
+
+    border:1px solid #efd3db;
+
+    border-radius:30px;
+
+    box-shadow:
+    0 20px 60px rgba(120,60,80,.08);
+}
+
+.venue-heart{
+
+    font-size:50px;
+
+    color:#d8899d;
+
+    margin-bottom:15px;
+}
+
+.venue-name{
+
+    font-family:"Amiri",serif;
+
+    font-size:45px;
+
+    color:#683b4b;
+}
+
+.location{
+
+    color:#8c747b;
+
+    margin:15px 0 30px;
+}
+
+.map-button{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:#c8798d;
+
+    color:white;
+
+    padding:16px 42px;
+
+    border-radius:50px;
+
+    box-shadow:
+    0 10px 25px rgba(180,90,115,.25);
+
+    transition:.3s;
+}
+
+.map-button:hover{
+
+    transform:translateY(-5px);
+
+    background:#a95d73;
+}
+
+
+/* =========================
+   معرض الصور
+========================= */
+
+.gallery-section{
+
+    background:#fff4f7;
+}
+
+.gallery{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+}
+
+.photo{
+
+    height:430px;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 15px 35px rgba(100,50,70,.10);
+}
+
+.photo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.7s;
+}
+
+.photo:hover img{
+
+    transform:scale(1.08);
+}
+
+
+/* =========================
+   العد التنازلي
+========================= */
+
+.countdown{
+
+    background:
+    linear-gradient(
+        135deg,
+        #7b4658,
+        #a65f74
+    );
+
+    color:white;
+}
+
+.countdown .title{
+
+    color:white;
+}
+
+.countdown .line{
+
+    background:#f4b8c7;
+}
+
+.timer{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+.time-box{
+
+    width:125px;
+
+    padding:22px 10px;
+
+    border:1px solid rgba(255,255,255,.3);
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.08);
+}
+
+.number{
+
+    font-size:40px;
+
+    font-weight:600;
+}
+
+.label{
+
+    font-size:13px;
+
+    opacity:.8;
+}
+
+
+/* =========================
+   الخاتمة
+========================= */
+
+.footer{
+
+    padding:110px 20px;
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(
+        rgba(80,35,50,.68),
+        rgba(80,35,50,.78)
+    ),
+
+    url("https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=2000&q=90");
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+}
+
+.footer h2{
+
+    font-family:"Amiri",serif;
+
+    font-size:70px;
+
+    font-weight:400;
+}
+
+.footer p{
+
+    margin-top:15px;
+
+    opacity:.9;
+
+    font-size:17px;
+}
+
+
+/* =========================
+   الموبايل
+========================= */
+
+@media(max-width:700px){
+
+    .hero h1{
+        font-size:65px;
+    }
+
+    .and{
+        font-size:35px;
+        margin:0 7px;
+    }
+
+    .title{
+        font-size:45px;
+    }
+
+    .intro p{
+        font-size:23px;
+    }
+
+    .date{
+        font-size:47px;
+    }
+
+    .venue-name{
+        font-size:36px;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .photo{
+        height:420px;
+    }
+
+    .footer h2{
+        font-size:55px;
+    }
+
+}
+
+
+/* =========================
+   زهرة بسيطة
+========================= */
+
+.flower{
+
+    position:absolute;
+
+    font-size:70px;
+
+    color:#ffd9e3;
+
+    opacity:.25;
+
+    z-index:2;
+}
+
+.flower.left{
+
+    left:-15px;
+
+    top:15%;
+
+    transform:rotate(-25deg);
+}
+
+.flower.right{
+
+    right:-15px;
+
+    bottom:15%;
+
+    transform:rotate(25deg);
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     البداية
+========================= -->
+
+<header class="hero">
+
+    <div class="hearts">
+
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+
+    </div>
+
+    <div class="flower left">❀</div>
+    <div class="flower right">❀</div>
+
+
+    <div class="hero-content">
+
+        <div class="bismillah">
+            بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ
+        </div>
+
+        <div class="invite">
+            بكل الحب ندعوكم لمشاركتنا أجمل أيام العمر
+        </div>
+
+        <h1>
+
+            بيسان
+
+            <span class="and">&</span>
+
+            حمزة
+
+        </h1>
+
+        <div class="subtitle">
+            بارك الله لنا وبارك علينا وجمع بيننا في خير
+        </div>
+
+    </div>
+
+
+    <div class="scroll">
+        ↓ مرر للأسفل
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     المقدمة
+========================= -->
+
+<section>
+
+    <h2 class="title">
+        بداية حكايتنا
+    </h2>
+
+    <div class="line"></div>
+
+    <div class="intro">
+
+        <p>
+            في يومٍ مميز من أيام العمر،
+            نحتفل معكم ببداية فصل جديد من حكايتنا.
+        </p>
+
+        <p>
+            وجودكم معنا يجعل فرحتنا أجمل
+            وذكرياتنا أجمل.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     التاريخ
+========================= -->
+
+<section class="date-section">
+
+    <h2 class="title">
+        موعد الزفاف
+    </h2>
+
+    <div class="line"></div>
+
+
+    <div class="date-card">
+
+        <div class="day">
+            الجمعة
+        </div>
+
+        <div class="date">
+            25 سبتمبر 2026
+        </div>
+
+        <div class="time">
+            الساعة 8:00 مساءً
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     المكان
+========================= -->
+
+<section class="venue">
+
+    <h2 class="title">
+        مكان الحفل
+    </h2>
+
+    <div class="line"></div>
+
+
+    <div class="venue-card">
+
+        <div class="venue-heart">
+            ♡
+        </div>
+
+        <div class="venue-name">
+            قصر السليمان للاحتفالات
+        </div>
+
+        <div class="location">
+            مادبا - الأردن
+        </div>
+
+
+        <!-- الموقع الحقيقي -->
+
+        <a
+            class="map-button"
+            href="https://www.google.com/maps/search/?api=1&query=قصر+السليمان+للاحتفالات+مادبا+الأردن"
+            target="_blank"
+        >
+
+            📍 افتح موقع القاعة
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     الصور
+========================= -->
+
+<section class="gallery-section">
+
+    <h2 class="title">
+        لحظات من حكايتنا
+    </h2>
+
+    <div class="line"></div>
+
+
+    <div class="gallery">
+
+        <div class="photo">
+
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=90">
+
+        </div>
+
+
+        <div class="photo">
+
+            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=90">
+
+        </div>
+
+
+        <div class="photo">
+
+            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=900&q=90">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     العد التنازلي
+========================= -->
+
+<section class="countdown">
+
+    <h2 class="title">
+        العد التنازلي لفرحتنا
+    </h2>
+
+    <div class="line"></div>
+
+
+    <div class="timer">
+
+        <div class="time-box">
+
+            <div class="number" id="days">
+                00
+            </div>
+
+            <div class="label">
+                يوم
+            </div>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <div class="number" id="hours">
+                00
+            </div>
+
+            <div class="label">
+                ساعة
+            </div>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <div class="number" id="minutes">
+                00
+            </div>
+
+            <div class="label">
+                دقيقة
+            </div>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <div class="number" id="seconds">
+                00
+            </div>
+
+            <div class="label">
+                ثانية
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     النهاية
+========================= -->
+
+<footer class="footer">
+
+    <h2>
+        بيسان & حمزة
+    </h2>
+
+    <p>
+        وجودكم معنا هو أجمل هدية ❤️
+    </p>
+
+    <p>
+        ننتظركم بكل حب
+    </p>
+
+</footer>
+
+
+
+<script>
+
+/* =========================
+   العد التنازلي
+========================= */
+
+const weddingDate =
+new Date("September 25, 2026 20:00:00").getTime();
+
+
+function updateCountdown(){
+
+    const now =
+    new Date().getTime();
+
+    const distance =
+    weddingDate - now;
+
+
+    if(distance <= 0){
+
+        document.getElementById("days").innerText="00";
+        document.getElementById("hours").innerText="00";
+        document.getElementById("minutes").innerText="00";
+        document.getElementById("seconds").innerText="00";
+
+        return;
+    }
+
+
+    const days =
+    Math.floor(
+        distance /
+        (1000 * 60 * 60 * 24)
+    );
+
+
+    const hours =
+    Math.floor(
+        (distance %
+        (1000 * 60 * 60 * 24))
+        /
+        (1000 * 60 * 60)
+    );
+
+
+    const minutes =
+    Math.floor(
+        (distance %
+        (1000 * 60 * 60))
+        /
+        (1000 * 60)
+    );
+
+
+    const seconds =
+    Math.floor(
+        (distance %
+        (1000 * 60))
+        /
+        1000
+    );
+
+
+    document.getElementById("days").innerText =
+    String(days).padStart(2,"0");
+
+    document.getElementById("hours").innerText =
+    String(hours).padStart(2,"0");
+
+    document.getElementById("minutes").innerText =
+    String(minutes).padStart(2,"0");
+
+    document.getElementById("seconds").innerText =
+    String(seconds).padStart(2,"0");
+
+}
+
+
+setInterval(updateCountdown,1000);
+
+updateCountdown();
+
+</script>
+
+
+</body>
+</html>
+```
